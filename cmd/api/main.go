@@ -21,4 +21,7 @@ func main() {
 	0
 	L`)
 	err := http.ListenAndServe("localhost:8000", r)
+	if err != nil {
+		log.Error(err)
+	}
 }
